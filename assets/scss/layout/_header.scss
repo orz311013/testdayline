@@ -1,0 +1,34 @@
+
+// $primary: #9747FF;
+// $warning : #FFC107;
+// $pink :  #FF97B0;
+// $gray : #ADB5BD;
+
+.header {
+  overflow: hidden;
+}
+.inputWithin {
+  position: relative; 
+  display: inline-block;
+}		
+.inputWithin .icon { /*左邊圖示*/
+  position: absolute; 			
+  left: 6px;
+  top: calc(50% - 0.5em);
+}
+
+//我把這個拉近component
+.userPic{
+  width: 48px;
+  height: 48px;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+button:hover> .userPic + p{
+  color:$primary !important;
+}
+
+
+// .user--onLogin{
+
+// }
