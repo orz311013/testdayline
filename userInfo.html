@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>個人資訊</title>
+		<script type="module" crossorigin src="/testdayline/assets/main-42b18963.js"></script>
+		<link rel="stylesheet" href="/testdayline/assets/main-458661d5.css">
+	</head>
+	<body>
+		<div class="container-fluid bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg d-flex navbar-dark py-3">
+            
+                <a class="logo-sm fs-1 text-light fw-bold text-decoration-none d-block d-md-block d-lg-none" href="./index.html">日更</a>
+                <div class="d-flex d-lg-none">
+                    <a href="#" class="user--onLogin bg-transparent border-0 text-hover-primary d-flex text-decoration-none align-items-center mx-3">
+                        <img src="/testdayline/assets/unsplash_lAKbS9nUMc4-3d72d405.jpg" alt="" class="userPic">
+                        <p class="fs-6 text-light ms-2 mb-0 text-hover-primary">木須龍</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+                        <a class="logo-xl fs-sm-4 fs-1 fw-bold text-light text-decoration-none d-none d-lg-block" href="./index.html">日更</a>
+                        <form class="my-4 my-lg-0" style="max-width: 640px;">
+                            <div class="inputWithin d-flex justify-content-center">
+                                <i class='fas fa-search icon'></i>
+                                <input class="js-search-input form-control ps-4" type="search" name="search" placeholder="搜尋更多日更" aria-label="Search">
+                            </div>  
+                        </form>
+                        <ul class="navbar-nav mb-lg-0 mt-lg-0 align-items-lg-center">
+                        <li class="nav-item me-lg-3 mb-3 mb-lg-0">
+                            <a class="nav-link fs-5 fw-bold text-light text-hover-primary me-lg-5 " href="./about.html">日更說明</a>
+                        </li>
+                        <!-- 未登入 -->
+                        <li class="user--offLogin nav-item">
+                            <!-- <button class="btn btn-outline-light px-4" type="submit">登入</button> -->
+                            <a class="btn btn-outline-light px-3 me-4" href="./signIn.html">登入</a>
+                            <a class="btn btn-outline-light px-3" href="./signUp.html">註冊</a>
+                        </li>
+                        <!-- 有登入 -->
+                        <li class="user--onLogin nav-item d-flex align-items-lg-center flex-column flex-lg-row">
+                                <button id="addPostBtn" class="btn btn-light fw-bold text-primary py-1 px-3 mb-4 mb-lg-0 w-fit" type="button">發日更</button>
+                                <a href="#" class="d-none d-lg-flex align-items-center bg-transparent border-0 text-hover-primary text-decoration-none  mx-lg-4">
+                                    <img src="/testdayline/assets/unsplash_lAKbS9nUMc4-3d72d405.jpg" alt="" class="userPic">
+                                    <p class="fs-6 text-light ms-2 mb-0 text-hover-primary">木須龍</p>
+                                </a>
+                                <!-- <button class="btn btn-light fw-bold text-dark py-1 px-3" type="submit">登出</button> -->
+                        </li>
+                        </ul>
+                </div> 
+        
+        </nav>
+    </div>
+</div>
+
+<!-- <div class="header d-flex justify-content-center ">
+    
+    <div class="pushsearchbarright">
+        <input type="text" class="searchbar" placeholder="搜尋更多日更">
+    </div>
+    <div class="pushloginright">
+        <button class="login">登入</button>
+    </div>
+    <div class="pushiconright">
+        <i class="material-symbols-outlined" style="font-size:25px; color:white;">
+            person
+        </i>
+    </div>
+    </div>
+</div> -->
+
+
+		<main>
+			<form class="container-field container-lg px-4 px-lg-5 py-lg">
+				<div
+					class="py-2 d-flex flex-column justify-content-center justify-content-md-start align-item-center w-xl-75 mx-auto"
+				>
+					<!-- left side -->
+					<div class="img-wrap text-center">
+						<img
+							src="/testdayline/assets/houdini-75c45f87.png"
+							class="userPic-selfie m-auto"
+							alt=""
+							style="--imgSize: clamp(128px, 15vw, 192px)"
+						/>
+					</div>
+				</div>
+				<!-- right side -->
+				<div class="mx-auto" style="width: clamp(368px, 50vw, 576px)">
+					<h2
+						class="text-dark mb-3 pb-3 border-bottom border-dark fs-4 fs-md-2"
+					>
+						個人資訊
+					</h2>
+					<div class="mb-3 d-flex align-items-center">
+						<label for="userName" class="form-group me-3 w-25">暱稱</label
+						><input type="text" id="userName" class="w-xl-75 form-control" />
+					</div>
+					<!-- <div class="mb-3 d-flex align-items-center">
+							<label for="" class="form-group me-3 w-25">個人信箱</label
+							><input type="text" class="w-md-50 form-control" disabled />
+						</div> -->
+					<div class="mb-3 d-flex align-items-center">
+						<label for="userDaylineType" class="form-group me-3 w-25"
+							>日更類型</label
+						>
+						<select
+							name="userDaylineType"
+							id="userDaylineType"
+							class="form-select w-fit"
+						>
+							<option value="" checked disabled>請選擇</option>
+							<option value="運動">運動</option>
+							<option value="繪畫">繪畫</option>
+							<option value="寫程式">寫程式</option>
+							<option value="">跳舞</option>
+						</select>
+					</div>
+					<div class="mb-6 d-flex">
+						<label for="userIntroduction" class="form-group me-3 w-25"
+							>個人簡介</label
+						>
+						<textarea
+							class="form-control w-xl-75"
+							name="userIntroduction"
+							id="userIntroduction"
+							rows="6"
+							maxlength="100"
+							value=""
+							style="resize: none"
+							placeholder="說兩句讓大家能夠認識你吧!(^u^) (最多一百字)"
+						></textarea>
+					</div>
+					<div
+						class="d-flex flex-column align-items-center align-items-md-end w-100"
+					>
+						<button
+							type="submit"
+							id="editUserSubmitBtn"
+							class="btn btn-outline btn-success btn-lg w-fit"
+						>
+							儲存
+						</button>
+					</div>
+				</div>
+			</form>
+		</main>
+		<div class="footer bg-dark">
+    <div class="footerhead text-center">
+        <div class="logo mt-5 text-light fs-1 fw-bold">日更</div>
+    </div>
+    <ul class="footerword d-flex flex-column flex-lg-row justify-content-center mt-4 list-unstyled text-center">
+        <li class="fs-5 fs-700 text-light px-3 py-2"><a href="about.html" class="text-decoration-none">日更說明</a></li>
+        <li class="fs-5 fs-700 text-light px-3 py-2">網站導覽</li>
+        <li class="fs-5 fs-700 text-light px-3 py-2">聯絡我們</li>
+        <li class="fs-5 fs-700 text-light px-3 py-2">行銷合作</li>
+        <li class="fs-5 fs-700 text-light px-3 py-2">影音分享</li>
+    </ul>
+
+    <div class="icon d-flex justify-content-center mt-4">
+        <i class="fa-brands fa-facebook text-light fs-1 px-5"></i> 
+        <i class="fa-brands fa-instagram text-light fs-1 px-5"></i> 
+        <i class="fa-brands fa-youtube text-light fs-1 px-5"></i> 
+    </div>
+    <div class="footerbottom text-center mt-4 mb-5">
+        <p class="fs-6">此專題僅供面試作品所用，非商業營利性質</p>
+    </div>
+</div>
+		
+	</body>
+</html>
